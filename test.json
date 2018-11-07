@@ -1,48 +1,36 @@
-  {
+{
     "$jason": {
       "head": {
+        "title": "Jasonbase",
         "actions": {
-            "visit": [
-              {
-                "{{#if /\\/(newest|show|ask)$/.test($jason.url) }}": {
-                  "type": "$default"
-                }
-              },
-              {
-                "{{#else}}": {
-                  "type": "$href",
-                  "options": {
-                    "url": "https://jasonette.github.io/Jasonpedia/webcontainer/agent/hijack.json",
-                    "preload": {
-                      "background": "#ffffff"
-                    },
-                    "options": {
-                      "url": "{{$jason.url}}"
-                    }
+          "visit": [
+            {
+              "{{#if /\\/edit/.test($jason.url)}}": {
+                "type": "$href",
+                "options": {
+                  "url": "{{$jason.url.replace('/edit', '')}}",
+                  "preload": {
+                    "background": "#ffffff"
                   }
                 }
               }
-            ]
-          },
-          "$load": {
-            "type": "$agent.request",
-            "options": {
-              "id": "$webcontainer",
-              "method": "login",
-              "params": ["alice", "1234"]
+            },
+            {
+              "{{#else}}": {
+                "type": "$default"
+              }
             }
-          }
+          ]
         }
       },
       "body": {
         "background": {
           "type": "html",
-          "url": "https://developers.mypos.eu/",
+          "url": "https://www.jasonbase.com",
           "action": {
-              "trigger": "visit"
+            "trigger": "visit"
           }
         }
       }
     }
-  
-  
+  }
