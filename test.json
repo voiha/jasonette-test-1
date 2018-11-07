@@ -15,12 +15,24 @@
   {
     "$jason": {
       "head": {
-        ...
+        "actions": {
+          "$load": {
+            "type": "$agent.request",
+            "options": {
+              "id": "$webcontainer",
+              "method": "login",
+              "params": ["alice", "1234"]
+            }
+          }
+        }
       },
       "body": {
+        "header": {
+          "title": "Web Container 2.0"
+        },
         "background": {
           "type": "html",
-          "url": "https://news.ycombinator.com"
+          "url": "https://developers.mypos.eu/"
         }
       }
     }
