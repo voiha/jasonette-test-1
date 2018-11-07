@@ -33,6 +33,9 @@
         "background": {
           "type": "html",
           "url": "https://developers.mypos.eu/"
+          "action": {
+              "trigger": "handleUrl"
+          }
         }
       }
     }
