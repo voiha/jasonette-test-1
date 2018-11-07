@@ -1,7 +1,6 @@
 {
     "$jason": {
       "head": {
-        "title": "Jasonbase",
         "actions": {
           "visit": [
             {
@@ -26,7 +25,7 @@
       "body": {
         "background": {
           "type": "html",
-          "url": "https://www.jasonbase.com",
+          "url": "https://developers.mypos.eu/",
           "action": {
             "trigger": "visit"
           }
