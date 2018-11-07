@@ -1,11 +1,11 @@
-/*"background": {
+"background": {
     "type": "html",
     "url": "https://developers.mypos.eu/",
     "action": {
         "trigger": "navigate"
     }
 }, 
-
+/*
 "text": "Click",
 "href": {
   "url": "https://developers.mypos.eu/",
