@@ -8,15 +8,7 @@
                   "title": "Link clicked",
                   "description": "{{$jason.url}}"
                     }
-                },
-          "$load": {
-            "type": "$agent.request",
-            "options": {
-              "id": "$webcontainer",
-              "method": "login",
-              "params": ["alice", "1234"]
-            }
-          }
+                }
         }
       },
       "body": {
