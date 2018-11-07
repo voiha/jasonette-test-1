@@ -16,12 +16,22 @@
     "$jason": {
       "head": {
         "actions": {
+            /*
           "$load": {
             "type": "$agent.request",
             "options": {
               "id": "$webcontainer",
               "method": "login",
               "params": ["alice", "1234"]
+            }
+          }*/
+          "handleUrl": {
+              "type": "$util.banner",
+              "options": {
+                  "title": "Link clicked",
+                  "description": "{{$jason.url}}"
+                    }
+                }
             }
           }
         }
