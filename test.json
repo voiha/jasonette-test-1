@@ -20,9 +20,7 @@
         }
       },
       "body": {
-        "header": {
-          "title": "Web Container 2.0"
-        },
+        
         "background": {
           "type": "html",
           "url": "https://developers.mypos.eu/",
