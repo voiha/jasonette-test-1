@@ -2,7 +2,7 @@
     "$jason": {
       "head": {
         "actions": {
-            "handleUrl": {
+            "handleLink": {
               "type": "$util.banner",
               "options": {
                   "title": "Link clicked",
@@ -20,12 +20,11 @@
         }
       },
       "body": {
-        
         "background": {
           "type": "html",
           "url": "https://developers.mypos.eu/",
           "action": {
-              "trigger": "handleUrl"
+              "trigger": "handleLink"
           }
         }
       }
