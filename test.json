@@ -32,7 +32,7 @@
         },
         "background": {
           "type": "html",
-          "url": "https://developers.mypos.eu/"
+          "url": "https://developers.mypos.eu/",
           "action": {
               "trigger": "handleUrl"
           }
