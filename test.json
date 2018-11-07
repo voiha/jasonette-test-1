@@ -1,28 +1,14 @@
-/*"background": {
-    "type": "html",
-    "url": "https://developers.mypos.eu/",
-    "action": {
-        "trigger": "navigate"
-    }
-}, 
-
-"text": "Click",
-"href": {
-  "url": "https://developers.mypos.eu/",
-  "view": "Web"  */
-
-
   {
     "$jason": {
       "head": {
         "actions": {
             "handleUrl": {
-                "type": "$util.banner",
-                "options": {
-                    "title": "Link clicked",
-                    "description": "{{$jason.url}}"
-                      }
-                  },
+              "type": "$util.banner",
+              "options": {
+                  "title": "Link clicked",
+                  "description": "{{$jason.url}}"
+                    }
+                },
           "$load": {
             "type": "$agent.request",
             "options": {
