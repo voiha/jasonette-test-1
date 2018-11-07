@@ -16,7 +16,13 @@
     "$jason": {
       "head": {
         "actions": {
-            /*
+            "handleUrl": {
+                "type": "$util.banner",
+                "options": {
+                    "title": "Link clicked",
+                    "description": "{{$jason.url}}"
+                      }
+                  },
           "$load": {
             "type": "$agent.request",
             "options": {
@@ -24,15 +30,6 @@
               "method": "login",
               "params": ["alice", "1234"]
             }
-          }*/
-          "handleUrl": {
-              "type": "$util.banner",
-              "options": {
-                  "title": "Link clicked",
-                  "description": "{{$jason.url}}"
-              }
-              
-              }
           }
         }
       },
