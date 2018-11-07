@@ -4,9 +4,21 @@
     "action": {
         "trigger": "navigate"
     }
-}, */
+}, 
 
 "text": "Click",
 "href": {
   "url": "https://developers.mypos.eu/",
-  "view": "Web"
+  "view": "Web"  */
+
+
+  {
+    "$jason": {
+      "head": {
+        "title": "{ ˃̵̑ᴥ˂̵̑}",
+        "actions": {
+          "$foreground": {
+            "type": "$reload"
+          }
+        }
+      }
