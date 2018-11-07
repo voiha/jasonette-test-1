@@ -2,13 +2,36 @@
     "$jason": {
       "head": {
         "actions": {
-            "handleLink": {
-              "type": "$util.banner",
-              "options": {
-                  "title": "Link clicked",
-                  "description": "{{$jason.url}}"
-                    }
+            "visit": [
+              {
+                "{{#if /\\/(newest|show|ask)$/.test($jason.url) }}": {
+                  "type": "$default"
                 }
+              },
+              {
+                "{{#else}}": {
+                  "type": "$href",
+                  "options": {
+                    "url": "https://jasonette.github.io/Jasonpedia/webcontainer/agent/hijack.json",
+                    "preload": {
+                      "background": "#ffffff"
+                    },
+                    "options": {
+                      "url": "{{$jason.url}}"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "$load": {
+            "type": "$agent.request",
+            "options": {
+              "id": "$webcontainer",
+              "method": "login",
+              "params": ["alice", "1234"]
+            }
+          }
         }
       },
       "body": {
@@ -16,7 +39,7 @@
           "type": "html",
           "url": "https://developers.mypos.eu/",
           "action": {
-              "trigger": "handleLink"
+              "trigger": "visit"
           }
         }
       }
