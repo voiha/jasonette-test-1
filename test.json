@@ -25,7 +25,7 @@
       "body": {
         "background": {
           "type": "html",
-          "url": "https://www.alafut.qc.ca/",
+          "url": "https://demo.mypos.eu/",
           "action": {
             "trigger": "visit"
           }
