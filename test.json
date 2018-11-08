@@ -25,12 +25,11 @@
       "body": {
         "background": {
           "type": "html",
-          "url": "https://developers.mypos.eu/",
+          "url": "https://www.alafut.qc.ca/",
           "action": {
             "trigger": "visit"
           }
         }
-        
       }
     }
   }
