@@ -25,7 +25,7 @@
       "body": {
         "background": {
           "type": "html",
-          "url": "https://demo.mypos.eu/",
+          "url": "https://dabov.coffee/?lang=bg",
           "action": {
             "trigger": "visit"
           }
