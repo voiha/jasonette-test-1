@@ -1,7 +1,6 @@
 {
     "$jason": {
       "head": {
-        "offline": "true",
         "actions": {
           "visit": [
             {
@@ -28,7 +27,7 @@
           "type": "html",
           "url": "https://dabov.coffee/?lang=bg",
           "action": {
-            "trigger": "visit"
+            "type": "default"
           }
         }
       }
