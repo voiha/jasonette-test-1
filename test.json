@@ -25,7 +25,7 @@
       "body": {
         "background": {
           "type": "html",
-          "url": "https://www.gabinashop.com/",
+          "url": "https://dabov.coffee/?lang=bg",
           "action": {
             "trigger": "visit"
           }
