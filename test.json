@@ -25,7 +25,7 @@
       "body": {
         "background": {
           "type": "html",
-          "url": "{{'url' in $params ? $params.url : 'https://dabov.coffee/?lang=bg'}}",
+          "url": "https://dabov.coffee/?lang=bg",
           "action": {
             "trigger": "visit"
           }
